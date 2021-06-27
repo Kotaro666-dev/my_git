@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/Kotaro666-dev/my_git/srcs/init"
+	"github.com/Kotaro666-dev/my_git/srcs/my_init"
 	"os"
 )
 
@@ -15,7 +15,7 @@ func main() {
 	arg := os.Args[1]
 	switch arg {
 	case "init":
-		init.Init()
+		my_init.Init()
 	case "add":
 		fmt.Println("my_git add")
 	case "commit":

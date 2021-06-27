@@ -1,4 +1,4 @@
-package init
+package my_init
 
 import "fmt"
 
