@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/Kotaro666-dev/my_git/srcs/add"
+	"github.com/Kotaro666-dev/my_git/srcs/commit"
+	"github.com/Kotaro666-dev/my_git/srcs/log"
 	"github.com/Kotaro666-dev/my_git/srcs/my_init"
 	"os"
 )
@@ -17,9 +20,11 @@ func main() {
 	case "init":
 		my_init.Init()
 	case "add":
-		fmt.Println("my_git add")
+		add.Add()
 	case "commit":
-		fmt.Println("my_git commit")
+		commit.Commit()
+	case "log":
+		log.Log()
 	default:
 		fmt.Printf("my_git: '%s' is not a git command. See 'git --help'.\n", arg)
 		os.Exit(1)
