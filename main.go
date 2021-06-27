@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/Kotaro666-dev/my_git/srcs/init"
 	"os"
 )
 
@@ -13,12 +14,14 @@ func main() {
 	}
 	arg := os.Args[1]
 	switch arg {
-		case "add":
-			fmt.Println("my_git add")
-		case "commit":
-			fmt.Println("my_git commit")
-		default:
-			fmt.Printf("my_git: '%s' is not a git command. See 'git --help'.\n", arg)
-			os.Exit(1)
+	case "init":
+		init.Init()
+	case "add":
+		fmt.Println("my_git add")
+	case "commit":
+		fmt.Println("my_git commit")
+	default:
+		fmt.Printf("my_git: '%s' is not a git command. See 'git --help'.\n", arg)
+		os.Exit(1)
 	}
 }
