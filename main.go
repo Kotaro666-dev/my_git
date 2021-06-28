@@ -20,7 +20,7 @@ func main() {
 	case "init":
 		my_init.Init()
 	case "add":
-		add.Add()
+		add.Add(os.Args)
 	case "commit":
 		commit.Commit()
 	case "log":
